@@ -28,6 +28,7 @@ const JoinButton: React.FC<{ roomId: string }> = ({ roomId }) => {
       <Modal
         title="Enter Name to Join Chat Room"
         open={open}
+        okButtonProps={{ "data-testid": "submitButton" }}
         onOk={handleJoin}
         onCancel={handleToggle}
       >

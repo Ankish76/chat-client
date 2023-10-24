@@ -106,6 +106,7 @@ const Home = () => {
             <Button
               size="large"
               type="primary"
+              data-testid="send-button"
               style={{ height: 50 }}
               onClick={handleSend}
             >

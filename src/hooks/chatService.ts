@@ -95,7 +95,7 @@ const useChatService = (
             dispatch(setUser(data?.joinRoom));
             dispatch(joinRoomAction(roomId));
             getRooms();
-            getChats({ roomId: data.joinRoom.id });
+            getChats({ roomId });
           }
         });
     },

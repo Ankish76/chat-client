@@ -64,7 +64,6 @@ const stringAvatar = (name: string) => {
 
 const Message: React.FC<MessageProps> = ({ chat, isSender }) => {
   const { message, user, type } = chat;
-
   if (type === "JOIN") {
     return <p style={joinedStyle}>{isSender ? "You have joined" : message}</p>;
   }
