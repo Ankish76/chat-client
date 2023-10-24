@@ -1,0 +1,31 @@
+#import "./fragmentUser.graphql"
+#import "./fragmentChat.graphql"
+#import "./fragmentPageInfo.graphql"
+query Chats(
+  $after: String
+  $before: String
+  $first: Int
+  $last: Int
+  $roomId: String!
+) {
+  chats(
+    after: $after
+    before: $before
+    first: $first
+    last: $last
+    roomId: $roomId
+  ) {
+    edges {
+      node {
+        ...chatFragment
+        user {
+          ...userFragment
+        }
+      }
+    }
+    pageInfo {
+      ...pageInfoFragment
+    }
+    totalCount
+  }
+}
