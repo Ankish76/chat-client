@@ -1,14 +1,14 @@
 import { useCallback } from "react";
 import { List, Typography } from "antd";
-import { Chat, ChatRoom } from "@/generated/graphql-operations";
+import { Chat, ChatRoom } from "@web/generated/graphql-operations";
 import { useSelector } from "react-redux";
 import {
   selectCurrentRoom,
   selectRooms,
   setCurrentRoom,
-} from "@/store/features/room";
+} from "@web/store/features/room";
 import JoinButton from "./JoinButton";
-import useChatService from "@/hooks/chatService";
+import useChatService from "@web/hooks/chatService";
 
 export type MessageProps = {
   chat: Chat;

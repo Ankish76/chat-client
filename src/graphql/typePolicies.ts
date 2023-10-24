@@ -1,4 +1,4 @@
-import { StrictTypedTypePolicies } from "@/generated/apollo-helpers";
+import { StrictTypedTypePolicies } from "@web/generated/apollo-helpers";
 
 const typePolicies: StrictTypedTypePolicies = {
   // Keys in this object will be validated against the types on your schema

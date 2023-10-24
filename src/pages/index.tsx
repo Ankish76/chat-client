@@ -1,12 +1,12 @@
 import React, { useCallback } from "react";
 import { Typography, Flex, Layout, Button } from "antd";
 import { useSelector } from "react-redux";
-import { selectInput, selectMessages } from "@/store/features/chat";
-import { selectCurrentRoom } from "@/store/features/room";
-import Rooms from "@/components/Rooms";
-import useChatService from "@/hooks/chatService";
-import { selectUser } from "@/store/features/user";
-import Message from "@/components/Message";
+import { selectInput, selectMessages } from "@web/store/features/chat";
+import { selectCurrentRoom } from "@web/store/features/room";
+import Rooms from "@web/components/Rooms";
+import useChatService from "@web/hooks/chatService";
+import { selectUser } from "@web/store/features/user";
+import Message from "@web/components/Message";
 
 const Home = () => {
   const { handleInputChange, addChat } = useChatService(true, true);

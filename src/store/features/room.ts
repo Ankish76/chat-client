@@ -1,6 +1,6 @@
 // src/features/roomSlice.ts
 
-import { ChatRoom } from "@/generated/graphql-operations";
+import { ChatRoom } from "@web/generated/graphql-operations";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface RoomState {

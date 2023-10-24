@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar } from "antd";
-import { Chat } from "@/generated/graphql-operations";
+import { Chat } from "@web/generated/graphql-operations";
 
 export type MessageProps = {
   chat: Chat;

@@ -2,7 +2,7 @@ import { BatchHttpLink } from "@apollo/client/link/batch-http";
 import { createHttpLink, from, split } from "@apollo/client";
 import { HttpOptions } from "@apollo/client/link/http/selectHttpOptionsAndBody";
 import { setContext } from "@apollo/client/link/context";
-import { clientConfig } from "@/config/client";
+import { clientConfig } from "@web/config/client";
 
 const illegalHeaders: string[] = ["connection"];
 const { apiUrl } = clientConfig;

@@ -1,4 +1,4 @@
-import { ChatRoom } from "@/generated/graphql";
+import { ChatRoom } from "@web/generated/graphql";
 import { Subscription } from "zen-observable-ts";
 import {
   AddMessageDocument,
@@ -11,15 +11,15 @@ import {
   RoomsQueryVariables,
   SessionUserDocument,
   User,
-} from "@/generated/graphql-operations";
-import { addMessage, inputChange, resetChats } from "@/store/features/chat";
+} from "@web/generated/graphql-operations";
+import { addMessage, inputChange, resetChats } from "@web/store/features/chat";
 import {
   resetRooms,
   selectCurrentRoom,
   setCurrentRoom,
   joinRoom as joinRoomAction,
-} from "@/store/features/room";
-import { selectUser, setUser } from "@/store/features/user";
+} from "@web/store/features/room";
+import { selectUser, setUser } from "@web/store/features/user";
 import { useApolloClient, useQuery } from "@apollo/client";
 import { useCallback, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";

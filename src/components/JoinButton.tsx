@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 import { Button, Modal, Input } from "antd";
 import { UserOutlined } from "@ant-design/icons";
-import useChatService from "@/hooks/chatService";
+import useChatService from "@web/hooks/chatService";
 
 const JoinButton: React.FC<{ roomId: string }> = ({ roomId }) => {
   const [open, setOpen] = useState(false);

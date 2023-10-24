@@ -9,7 +9,7 @@ const config: CodegenConfig = {
       DateTime: "Date",
     },
   },
-  schema: [process.env.NEXT_PUBLIC_API_URL || ""],
+  schema: [process.env.NEXT_PUBLIC_GQL_URL || ""],
   documents: "src/**/*.graphql",
   generates: {
     "src/generated/": {

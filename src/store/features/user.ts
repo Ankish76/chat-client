@@ -1,6 +1,6 @@
 // src/features/chatSlice.ts
 
-import { User } from "@/generated/graphql-operations";
+import { User } from "@web/generated/graphql-operations";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface UserState {

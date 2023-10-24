@@ -16,7 +16,7 @@ import { createClient } from "graphql-ws";
 import getWs from "./websocket";
 import cache from "./cache";
 import httpLink from "./httpLink";
-import { clientConfig } from "@/config/client";
+import { clientConfig } from "@web/config/client";
 
 export const APOLLO_STATE_PROP_NAME = "__APOLLO_STATE__";
 

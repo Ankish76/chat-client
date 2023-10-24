@@ -1,7 +1,7 @@
 import { InMemoryCache } from "@apollo/client";
 // import memoize from "lodash/memoize";
 
-// import introspectionQueryResultData from "@/generated/graphql.schema.json";
+// import introspectionQueryResultData from "@web/generated/graphql.schema.json";
 
 import typePolicies from "./typePolicies";
 

@@ -1,6 +1,6 @@
 // src/features/chatSlice.ts
 
-import { Chat } from "@/generated/graphql-operations";
+import { Chat } from "@web/generated/graphql-operations";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface ChatState {
